@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: none; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 157, 255, 0.6),rgba(93, 0, 255, 0.6));
+}
+main{
+    background-color: aliceblue;
+    backdrop-filter: blur(5px);
+    width: 20rem;
+    min-height: 20rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(56, 56, 56, 0.187);
+    border-radius: 10rem;
+    height: 2.5rem;
+    padding: 5px 10px;
+}
+form input, form button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+main form i{
+    opacity: 0.7;
+}
+main .result{
+    margin-top: 1rem;
+    text-align: center;
+}
+main .result .location{
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+main .temperature img{
+    width: 8rem;
+    filter: drop-shadow(0px 10px 50px rgb(0, 0, 0));
+}
+main .temperature figcaption{
+    font-size: 3rem;
+}
+main .description{
+    padding: 0.8rem 0 2rem;
+}
+main ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.8rem;
+}
+main li{
+    background-color: rgb(255, 157, 30);
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1.3rem 0.6rem;
+    background-image: linear-gradient(
+        to bottom, transparent 50%,#0003 50%
+    );
+    font-weight: bold;
+    font-size: small;
+}
+main li i{
+    font-size: 2em;
+    display: block!important;
+    margin: 0.5rem 0;
+}
+main li:nth-child(2){
+    background-color: #b56291;
+}
+main li:nth-child(3){
+    background-color: #485098;
+}
+
+.error{
+    animation: errorEffect 0.3s linear;
+}
+@keyframes errorEffect {
+    0%{
+        transform: translate(2px, 10px);
+    }
+    25%{
+        transform: translate(-1px, -5px);
+    }
+    50%{
+        transform: translate(4px, -10px);
+    }
+    75%{
+        transform: translate(-3px, 5px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}
