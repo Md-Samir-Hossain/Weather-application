@@ -18,4 +18,8 @@ A simple weather application that allows users to check the current weather cond
 
 - The app uses the [OpenWeatherMap API](https://openweathermap.org/) to fetch the current weather data based on the city entered by the user.
 - Upon form submission, the app displays weather details including the city name, temperature, weather icon, description, humidity, cloud percentage, and wind speed.
-  
+
+## Link
+
+You can try it here - https://md-samir-hossain.github.io/Weather-application/
+
